@@ -20,7 +20,7 @@ $ docker run \
 To see list of certs:
 
 ```shell
-$ docker exec puppetmaster puppet cert list -all`
+$ docker exec puppetmaster puppet cert list --all
 ```
 
 Test puppet on client with:
@@ -30,3 +30,7 @@ $ puppet agent --test --server <puppetmaster_hostname>
 ```
 
 You should see the cert request being generated and autosigned.
+
+## Reference
+
+Forked from [macadmins/docker-puppetmaster](https://github.com/macadmins/docker-puppetmaster).
