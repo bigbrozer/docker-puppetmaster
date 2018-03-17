@@ -15,6 +15,7 @@ RUN set -ex \
       && yum clean all
 
 ADD puppet.conf /etc/puppet/puppet.conf
+ADD hiera.yaml /etc/puppet/hiera.yaml
 
 VOLUME ["/etc/puppet", "/var/lib/puppet"]
 
